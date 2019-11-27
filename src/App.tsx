@@ -1,22 +1,7 @@
-/**
- * Sample React Native App
- * https://github.com/facebook/react-native
- *
- * Generated with the TypeScript template
- * https://github.com/react-native-community/react-native-template-typescript
- *
- * @format
- */
-
 import React from 'react';
-import {Text} from 'react-native';
+import {createAppContainer} from 'react-navigation';
+import MainNavigator from './MainNavigator';
 
-const App = () => {
-  return (
-    <>
-      <Text>Todo list app</Text>
-    </>
-  );
-};
+const App = createAppContainer(MainNavigator);
 
 export default App;
